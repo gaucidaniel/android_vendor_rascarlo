@@ -45,3 +45,7 @@ PRODUCT_COPY_FILES += \
     vendor/rascarlo/proprietary/hammerhead/system/NewAdrenoDrivers/lib/librs_adreno_sha1.so:system/vendor/lib/librs_adreno_sha1.so \
     vendor/rascarlo/proprietary/hammerhead/system/NewAdrenoDrivers/lib/libRSDriver_adreno.so:system/vendor/lib/libRSDriver_adreno.so \
     vendor/rascarlo/proprietary/hammerhead/system/NewAdrenoDrivers/lib/libsc-a3xx.so:system/vendor/lib/libsc-a3xx.so
+
+# fix for green line in videos
+PRODUCT_COPY_FILES += \
+    vendor/rascarlo/proprietary/hammerhead/system/lib/libmmcamera_interface.so:system/lib/libmmcamera_interface.so
