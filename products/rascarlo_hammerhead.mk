@@ -49,3 +49,17 @@ PRODUCT_COPY_FILES += \
 # fix for green line in videos
 PRODUCT_COPY_FILES += \
     vendor/rascarlo/proprietary/hammerhead/system/lib/libmmcamera_interface.so:system/lib/libmmcamera_interface.so
+
+# dalvik patch
+PRODUCT_COPY_FILES += \
+    vendor/rascarlo/proprietary/hammerhead/system/dalvik/system/bin/dalvikvm:system/bin/dalvikvm \
+    vendor/rascarlo/proprietary/hammerhead/system/dalvik/system/bin/dexopt:system/bin/dexopt \
+    vendor/rascarlo/proprietary/hammerhead/system/dalvik/system/bin/installd:system/bin/installd \
+    vendor/rascarlo/proprietary/hammerhead/system/dalvik/system/lib/libcutils.so:system/lib/libcutils.so \
+    vendor/rascarlo/proprietary/hammerhead/system/dalvik/system/lib/libdvm.so:system/lib/libdvm.so \
+    vendor/rascarlo/proprietary/hammerhead/system/dalvik/system/vendor/lib/libqc-opt.so:system/vendor/lib/libqc-opt.so 
+
+# bionic patch
+PRODUCT_COPY_FILES += \
+    vendor/rascarlo/proprietary/hammerhead/system/bionic/system/lib/libc.so:system/lib/libc.so \
+    vendor/rascarlo/proprietary/hammerhead/system/bionic/system/lib/libm.so:system/lib/libm.so
